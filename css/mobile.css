@@ -1,0 +1,195 @@
+@media only screen and (max-width: 768px) {
+
+    nav {
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        position: fixed;
+        left: 0;
+        right: 0;
+        /* padding: 0.5 1rem ; */
+        /* margin-left: 100vw;
+        margin-right: -100vw; */
+        width: 100%;
+        /* z-index: 9999; */
+        
+        /* right: 0; */
+    }
+
+    nav ul {
+        /* display: none; */
+        flex-direction: column;
+        width: 80%;
+        padding: 0.3rem;
+        border: 1px gray solid;
+        border-radius: 10px;
+        /* margin-top: 1.2rem; */
+        background-color: rgb(240, 240, 240);
+        margin: 0.5rem ;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0.2rem;
+        display: inline-block;
+        
+        /* text-align: center; */
+    }
+
+    nav ul li:hover {
+        border-radius: 10px;
+        color: white;
+    }
+
+    nav ul li a {
+        display: block;
+        /* padding: 10px 10px -10px 10px; */
+        /* padding: 0.5rem; */
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        /* padding-left: rem; */
+        
+        background-color: #383838;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    nav ul li a:hover {
+        background-color: #333333;
+        color: white;
+    }
+    
+ 
+
+    
+
+    nav .nav-button {
+        display: block;
+    }
+
+    nav .nav-button i {
+        padding: 0.8rem;
+    }
+
+    nav .nav-button i:hover {
+        background-color: rgb(240, 240, 240);
+        padding: 0.8rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 6px -6px rgb(230, 230, 230);
+        border: 1px solid gray;
+    }
+
+    #jumbotron {
+        /* padding-top: 0; */
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        /* text-align: ; */
+        /* margin-top: 1rem; */
+    }
+
+    #jumbotron .hidden {
+        display: none;
+    }
+
+    #jumbotron .jumbotron-image img {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #jumbotron .jumbotron-text p {
+        margin: auto 2%;
+        text-align: left;
+    }
+
+    #jumbotron .jumbotron-text h2 {
+        font-size: 2.4rem;
+        /* letter-spacing: 0rem; */
+        text-align: left;
+        /* text-align: center; */
+    }
+
+    .jumbotron-button {
+        justify-content: start;
+    }
+    
+    .jumbotron-button a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Members */
+
+    section.members {
+        padding: 1rem;
+        padding-bottom: 30%;
+    }
+
+    section.members .title-members {
+        margin: 2rem;
+    }
+
+    section.members .title-members p{
+        margin: 1rem -5%;
+        /* text-align: justify; */
+    }
+
+    /* Service */
+    /* section.service {
+        padding: 1rem;
+        padding-bottom: 30%;
+    } */
+
+    section.service .service-content .card {
+        padding: 1rem ;
+        /* margin: 0 auto; */
+        width: auto;
+    }
+
+    section.service .service-content .card .card-desk img {
+        width: 1.7rem;
+    }
+
+    /* Partners */
+
+    
+    section.partners .container-partners .partners-content {
+        padding: 0;
+    }
+
+    section.partners .container-partners .partners-content .slider-partners img{
+        margin: 2rem;
+    }
+
+    /* Contact */
+
+    section.contact .container-contact .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 17rem 0;
+    }
+
+
+    section.contact .container-contact .contact-content .list-social-media li a {
+        font-size: 2.5rem;
+        margin: 1rem;
+    
+    }
+
+    /* Scroll */
+    #member, #service, #partner, #contacts {
+        scroll-margin-top: 4rem;
+    }
+   
+}

@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: content-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color:white;
+    /* overflow-x: hidden; */
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 1rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    z-index: 9999;
+
+}
+
+/* nav .nav-icon img {
+    border-radius: 100%;
+} */
+
+.nav-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title img {
+    border-radius: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: black;
+    margin-right: 1rem;
+    font-weight: 500;
+    
+}
+
+ul li a:hover {
+    color: #707070;
+}
+
+nav .nav-button {
+    display: none;       
+    cursor: pointer; 
+}
+
+/* Jumbotron */
+#jumbotron {
+    height: 100vh;
+   
+    background-color: white;
+    display: flex;
+    /* margin-top: -3rem; */
+    /* padding-top: 3rem; */
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    /* border-bottom: #4b4b4b solid 2px;  */
+    
+    /* margin-top: 1rem; */
+
+}
+
+#jumbotron .jumbotron-text {padding-top: 3rem;}
+
+#jumbotron .jumbotron-text h2 {
+    /* font-weight: 700; */
+    /* word-spacing: -1rem; */
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+#jumbotron .jumbotron-text p {
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto 20%;
+}
+
+#jumbotron .jumbotron-text a {
+    
+    text-decoration: none;
+    background-color: #5c79ee;
+    color: white;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    border: 3px solid rgb(55, 55, 55);
+    
+}
+
+#jumbotron .jumbotron-text a:hover {
+    background-color: #3955c2;
+}
+
+.jumbotron-button {
+    justify-content: center;
+}
+
+/* Members */
+
+section.members {
+    height: 100vh;
+    padding: 2rem; 
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 15%;
+    /* border-top: #4b4b4b solid 2px;
+    border-bottom: #4b4b4b solid 2px;  */
+}
+
+section.members .title-members {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+}
+
+section.members .title-members p{
+    margin: 1rem 10%;
+}
+
+section.members .title-members h2 {
+    font-size: 3rem;
+    /* font-weight: 600; */
+    font-style: italic;
+}
+
+section.members .member-ent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding-bottom: 5rem; */
+} 
+
+/* section.members .member-ent iframe {
+    width:30%;
+    height:40%
+} */
+
+
+/* service */
+
+section.service .container-service {
+    width: 100%;
+}
+
+section.service .container-service .service-title {
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+section.service .container-service .service-title h2 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+section.service .container-service .service-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 1rem; */
+    /* margin-top: 3rem; */
+    padding-bottom: 3rem;
+    flex-direction: column;
+    
+}
+
+section.service .service-content .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fFF;
+    padding: 2.5rem 2rem;
+    margin: 1rem;
+    /* color: ; */
+    width: 50%;
+    text-align: left;
+    border-radius: 10px;
+    border: 3px solid rgb(55, 55, 55);
+    /* position: relative; */
+}
+
+/* section.service .service-content .card img {
+    width: 20%;
+} */
+
+section.service .service-content .card .card-title {
+   margin-bottom: 1rem;
+   font-size: 1.3rem;
+   text-align: center;
+   font-style: italic;
+}
+
+section.service .service-content .card .price-list{
+    display: flex;
+    /* flex-direction: row; */
+    padding-bottom: 1rem;
+    justify-content: space-around;
+}
+
+section.service .service-content .card .card-desk:first-of-type {
+    /* margin:0 1rem; */
+    margin-right: 1rem;
+}
+
+section.service .service-content .card .card-desk .list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* font-style: italic; */
+    /* padding-right: -10rem; */
+    /* justify-content: center; */
+}
+
+
+section.service .service-content .card .card-desk img {
+    width: 2.5rem;
+}
+
+section.service .service-content .card .card-desk .list-item .item-1, .item-2, .item-3, .item-4 {
+    border-bottom: 1px dotted #000;
+    cursor: pointer;
+}
+
+section.service .service-content .service-button {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+section.service .service-content .service-button a{
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 4px solid #707070;
+    display: inline-block;
+    
+}
+
+section.service .service-content .service-button a:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+
+/* PARTNERS =========================================================== */
+
+section.partners .container-partners {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+section.partners .container-partners .partners-title {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+section.partners .container-partners .partners-title h2 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+section.partners .container-partners .partners-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 8rem 0; /* mobile.css */
+    
+
+}
+
+section.partners .container-partners .partners-content .slider-partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.partners .container-partners .partners-content .slider-partners img{
+    margin: 3rem;
+}
+
+
+/* Contact */
+section.contact .container-contact {
+    width: 100%;
+    /* padding:0 1rcap; */
+}
+
+section.contact .container-contact .contact-title {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+section.contact .container-contact .contact-title h2{
+    font-size: 2.7rem;
+    font-style: italic;
+}
+
+section.contact .container-contact .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 13rem 0;
+}
+
+section.contact .container-contact .contact-content .list-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+section.contact .container-contact .contact-content .list-social-media i.fa-discord:hover {
+    color: #3955c2;
+}
+
+section.contact .container-contact .contact-content .list-social-media i.fa-tiktok:hover {
+    color:#ff0050 ;
+}
+
+section.contact .container-contact .contact-content .list-social-media i.fa-steam:hover {
+    color: #334b68;
+}
+
+section.contact .container-contact .contact-content .list-social-media i.fa-twitter:hover {
+    color: #1D9BF0;
+}
+
+section.contact .container-contact .contact-content .list-social-media i.fa-instagram:hover {
+    background: linear-gradient(135deg, rgb(64, 114, 196), rgb(156, 68, 214), rgb(247, 83, 148), rgb(255, 129, 49));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+section.contact .container-contact .contact-content .list-social-media li a {
+    margin: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Footer */
+
+footer .container-footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer .container-footer p {
+    font-size: 0.8rem;
+}
+footer .container-footer a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #3955c2;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+
+/* Scroll */
+
+#member, #service, #partner, #contacts {
+    scroll-margin-top: 4rem;
+}
