@@ -167,6 +167,10 @@
         padding: 0;
     }
 
+    section.partners .container-partners .partners-content .slider-partners {
+        margin: 0 0 5rem 0;
+    }
+
     section.partners .container-partners .partners-content .slider-partners img{
         margin: 2rem;
     }
